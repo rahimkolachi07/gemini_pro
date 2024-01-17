@@ -19,5 +19,5 @@ for m in genai.list_models():
     pass
 def model(text):
    model = genai.GenerativeModel('gemini-pro')
-   response = model.generate_content("how are you? write a short answare")
+   response = model.generate_content(text)
    return response.text
